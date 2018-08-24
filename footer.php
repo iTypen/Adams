@@ -6,11 +6,17 @@
                 'theme_location' => 'footer_nav',
                 'depth' => 0
             )
-        );?>
+        ); ?>
         <p>
-            <span class='left'><?php echo '&copy; '.date('Y').' <a href="'.get_bloginfo('url').'">'.get_bloginfo('name').'</a>';
-                 if(get_option('zh_cn_l10n_icp_num')) echo " . " . get_option('zh_cn_l10n_icp_num');?></span>
-            <span class='right'>Theme by <a href="https://biji.io" target="_blank">Adams</a></span>
+            <span class='left'><?php echo '&copy; ' . date('Y') . ' <a href="' . get_bloginfo('url') . '">' . get_bloginfo('name') . '</a>';
+                                if (get_option('zh_cn_l10n_icp_num')) echo " . " . get_option('zh_cn_l10n_icp_num'); ?></span>
+            <span class='right'>Theme by <a href="https://www.itypen.com" target="_blank">iTypen</a> based on <a href="https://biji.io" target="_blank">Adams</a></span>
+            <br />
+            <a href="https://www.upyun.com" target="_blank">
+                <svg class="itpweb" aria-hidden="true" width="30" height="30">
+                    <use xlink:href="#itpweb-upyun-color">又拍云</use>
+                </svg>
+            </a>
         </p>
 	</section>
 </footer>
@@ -29,16 +35,12 @@
     <div class="c">
         <ul>
             <li class="color undefined">默认</li>
-            <li class="color sepia">护眼</li>
             <li class="color night">夜晚</li>
-            <li class="hr"></li>
-            <li class="font serif">Serif</li>
-            <li class="font sans">Sans</li>
         </ul>
     </div>
 </div>
 
-<?php wp_footer();?>
+<?php wp_footer(); ?>
 <script data-no-instant>
     (function ($) {
         $.extend({
@@ -47,17 +49,20 @@
                 $(".post_article a").attr("rel" , "external");
                 $("a[rel='external'],a[rel='external nofollow']").attr("target","_blank");
                 $("a.vi").attr("rel" , "");
-<?php if(!get_theme_mod('biji_setting_viewimage')){ ?>
+<?php if (!get_theme_mod('biji_setting_viewimage')) { ?>
                 $.viewImage({
                     'target'  : '.post_article img,.post_article a,a.vi',
                     'exclude' : '.readerswall img',
                     'delay'   : 300
                 });
-<?php } if(!get_theme_mod('biji_setting_lately')){ ?>
+<?php 
+}
+if (!get_theme_mod('biji_setting_lately')) { ?>
                 $.lately({
                     'target' : '.commentmetadata a,.infos time,.post-list time'
                 });
-<?php }?>
+<?php 
+} ?>
                 prettyPrint();
                 
                 $('ul.links li a').each(function(){
@@ -68,10 +73,10 @@
             }
         });
     })(jQuery);
-<?php if(get_theme_mod('biji_setting_footInfo')){ 
-        echo get_theme_mod('biji_setting_footInfo') . "\n";
-    }
-    if(!get_theme_mod('biji_setting_pjax')){ ?>
+<?php if (get_theme_mod('biji_setting_footInfo')) {
+    echo get_theme_mod('biji_setting_footInfo') . "\n";
+}
+if (!get_theme_mod('biji_setting_pjax')) { ?>
     InstantClick.on('change', function(isInitialLoad) {
         jQuery.adamsOverload();
         if (isInitialLoad === false) {
@@ -95,10 +100,12 @@
         // pjax end
     });
     InstantClick.init('mousedown');
-<?php } else {?>
+<?php 
+} else { ?>
     jQuery.adamsOverload();
-<?php }?>
+<?php 
+} ?>
 </script>
-<!--网站效率：<?php timer_stop(4);?>秒内查询了<?=get_num_queries();?>次数据库-->
+<!--网站效率：<?php timer_stop(4); ?>秒内查询了<?= get_num_queries(); ?>次数据库-->
 </body>
 </html>

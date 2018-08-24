@@ -153,6 +153,7 @@ function enable_more_buttons($buttons) {
 add_filter("mce_buttons_3", "enable_more_buttons");
 
 // 代码高亮
+/*
 function dangopress_esc_html($content)
 {
     if(!is_feed()||!is_robots) {
@@ -173,6 +174,7 @@ function dangopress_esc_callback($matches)
 }
 add_filter('the_content', 'dangopress_esc_html', 2);
 add_filter('comment_text', 'dangopress_esc_html', 2);
+*/
 
 // 评论@回复
 function idevs_comment_add_at( $comment_text, $comment = '') {
