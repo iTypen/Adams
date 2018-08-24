@@ -106,6 +106,17 @@ if (!get_theme_mod('biji_setting_pjax')) { ?>
 <?php 
 } ?>
 </script>
-<!--网站效率：<?php timer_stop(4); ?>秒内查询了<?= get_num_queries(); ?>次数据库-->
+
+<script>
+    console.log(
+        " \n %c Server efficiency: Query Database <?= get_num_queries(); ?> times in <?php timer_stop(4); ?> seconds ",
+        "color: #fff; background-image: linear-gradient(90deg, rgb(83, 120, 149) 0%, rgb(11, 34, 65) 100%); padding:10px 20px; border-radius: 50px;",
+        );
+        console.log(
+        " \n %c 山有木兮木有枝 心悦君兮君不知 ",
+        "color: #fff; background-image: linear-gradient(90deg, rgb(83, 120, 149) 0%, rgb(11, 34, 65) 100%); padding:10px 20px; border-radius: 50px;",
+        );
+</script>
+
 </body>
 </html>
