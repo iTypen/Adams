@@ -477,8 +477,8 @@ class ThemeUpdate {
 }
 endif;
 $mytheme_update_checker = new ThemeUpdateChecker(
-	'adams',
-	'https://biji.io/update/adams.json'
+	'itypen',
+	'https://raw.githubusercontent.com/iTypen/Adams/master/update.json'
 );
 
 // 全部配置完毕
