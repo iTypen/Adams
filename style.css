@@ -5,18 +5,10 @@
 	Description: 山有木兮木有枝 心悦君兮君不知
 	Author: aiokr
 	Author URI: https://www.itypen.com
-	Version: 0.9.4
+	Version: 0.9.5
 */
 
 /* Reset */
-
-.icon {
-    width: 1em;
-    height: 1em;
-    vertical-align: -0.15em;
-    fill: currentColor;
-    overflow: hidden;
-}
 
 html {
     -webkit-box-sizing: border-box;

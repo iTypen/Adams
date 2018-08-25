@@ -12,8 +12,6 @@
         if(localStorage.adams_color_style) $('head').append("<style class='diy-color-style'>" + localStorage.adams_color_style + "</style>");
         if(localStorage.adams_font_style) $('head').append("<style class='diy-font-style'>" + localStorage.adams_font_style + "</style>");
     </script>
-    <!--阿里巴巴矢量图标库 Javascript 文件接入点-->
-    <script language="javascript" src="//at.alicdn.com/t/font_808249_tn2t1vs1ry.js"></script>
 </head>
 <body>
 <!-- Header -->

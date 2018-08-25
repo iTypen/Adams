@@ -13,9 +13,7 @@
             <span class='right'>Theme by <a href="https://www.itypen.com" target="_blank">iTypen</a> based on <a href="https://biji.io" target="_blank">Adams</a></span>
             <br />
             <a href="https://www.upyun.com" target="_blank">
-                <svg class="itpweb" aria-hidden="true" width="30" height="30">
-                    <use xlink:href="#itpweb-upyun-color">又拍云</use>
-                </svg>
+                <img src="https://www.itypen.com/wp-content/uploads/2018/08/1535202431-upyun.png">
             </a>
         </p>
 	</section>
