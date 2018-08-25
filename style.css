@@ -5,7 +5,7 @@
 	Description: 山有木兮木有枝 心悦君兮君不知
 	Author: aiokr
 	Author URI: https://www.itypen.com
-	Version: 0.9.2
+	Version: 0.9.4
 */
 
 /* Reset */
@@ -142,7 +142,10 @@ section {
 
 body {
     background: #FFF;
-    font: 1rem/1.5 "lucida grande", "lucida sans unicode", lucida, helvetica, "PingFang SC", "Hiragino Sans GB", "STHeiti Light", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+    font-family: "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .87);
+    background-color: #fff;
 }
 
 html,
@@ -927,7 +930,6 @@ a .post_article h1,
     background: #fafafa;
     line-height: 38px;
 }
-
 
 .post_article ol li {
     list-style-type: decimal;

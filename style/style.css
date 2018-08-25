@@ -5,3 +5,11 @@ div.elem{
     background: #ffffff;
     line-height: 38px;
 }
+
+.mdui-card-primary-title a {
+    text-decoration: none;
+}
+
+.topics-padding{
+    padding: 15px;
+}
