@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="<?php bloginfo('template_url'); ?>/style.css?<?php echo THEME_DB_VERSION;?>" type="text/css" rel="stylesheet">
     <link href="<?php bloginfo('template_url'); ?>/static/caomei1.2.8/style.css?<?php echo THEME_DB_VERSION;?>" type="text/css" rel="stylesheet">
-    <link href="<?php bloginfo('template_url'); ?>/assets/css/mdui.min.css" type="text/css" rel="stylesheet">
+    <link href="<?php bloginfo('template_url'); ?>/assets/css/mdui.css" type="text/css" rel="stylesheet">
+    <link href="<?php bloginfo('template_url'); ?>/style/style.css" type="text/css" rel="stylesheet">
     <?php wp_head(); ?>
     
     <script>
         if(localStorage.adams_color_style) $('head').append("<style class='diy-color-style'>" + localStorage.adams_color_style + "</style>");
         if(localStorage.adams_font_style) $('head').append("<style class='diy-font-style'>" + localStorage.adams_font_style + "</style>");
     </script>
+    <script language="javascript" src="<?php bloginfo('template_url'); ?>/assets/js/mdui.min.js"></script>
+    <!--阿里巴巴矢量图标库 Javascript 文件接入点-->
     <script language="javascript" src="//at.alicdn.com/t/font_808249_tn2t1vs1ry.js"></script>
 </head>
 <body>

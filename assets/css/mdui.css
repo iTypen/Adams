@@ -9655,7 +9655,6 @@ select.mdui-select[multiple] option:last-child {
   position: relative;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow: hidden;
   color: #000;
   background-color: #fff;
   border-radius: 2px;
